@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        
+       
+        
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+
+
+
+        <title>Pickle | Gallery</title>
+
+        <link rel="stylesheet" href="./assets/styles.css"/>
+        <link rel="icon" href="favicon.png"/>
+
+        <script src="https://unpkg.com/@supabase/supabase-js"></script>
+        <script src="./assets/caller.js"></script>
+    </head>
+    <body onload="getData()">
+        
+
+        <!-- <button onclick="getData()">Rect</button> -->
+        <div class="container">
+            <div class="row app-holder">
+                
+                    <div class="col-lg-3" style="margin-right: 15px;">
+                        <div class="menu_container">
+                            <img src="https://media.giphy.com/media/du9HGmnPCa2CwIBcR9/giphy.gif" class="img-fluid" style="margin-bottom: 20px;"/>
+                            
+                            <img src="https://media.giphy.com/media/kHlYhf5Juyt6V2sRXF/giphy.gif" width="40px" style="margin-right:10px"/>
+                            <a href="./editor/index.html"><button class="intent_button"
+                            id="createmeet_button">Create new pickle</button></a>
+                        
+                            </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="featured-container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="title-text">🔥 Featured</p>
+                                </div>
+                                <div class="row" id="featured-container">
+                                    <div class="loader-gif">
+                                        <img src="https://media.giphy.com/media/iiUmQAWpan23w02aEQ/giphy.gif" width="70px"/>
+                                        <p class="summary_text">Loading featured . . .</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="everything-else-container">
+                            <div class="col-lg-12">
+                                <p class="title-text">🤯 All pickles</p>
+                            </div>
+                            <div class="row" id="everything-else-container">
+                                <div class="loader-gif">
+                                    <img src="https://media.giphy.com/media/WTdvWQv95wIXQCv0BO/giphy.gif" width="80px"/>
+                                    <p class="summary_text">Loading all . . .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+            </div>
+
+            <div class="row notice-holder">
+                <div class="col-lg-7" style="margin: 0 auto;">
+                 <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                     <img src="https://media.giphy.com/media/du9HGmnPCa2CwIBcR9/giphy.gif" alt="Doneth logo" style="width: 80px; height: 80px; margin: 20px">
+                     <p class="summary_text" style="font-size: 22px; margin-bottom: 5px; min-height: 30px;">Sorry :(</p>
+                     <p class="summary_text" style="text-align: left;
+                     margin-top: 0px;">
+                         Pickle is not currently available for the screen size you are using.<br/>
+                         We are trying to bring Pickle to all screen sizes and devices, but currently, you need to use a screen with a width of at least 994px to use Pickle.<br/><br/>
+                         If you are joining from a tablet, please try in landscape orientation.
+                     </p>
+ 
+                 </div>
+                </div>
+             </div>
+
+             <div class="row footer">
+                 <div class="col-lg-12">
+                        <button class="intent_button">Made with &nbsp;<i class="fas fa-heart"></i></button>
+                        <button class="intent_button" onclick="window.open('https://twitter.com/shuvam360')"><i class="fab fa-twitter"></i>&nbsp; @shuvam360</button>
+                        <button class="intent_button" onclick="window.open('https://supabase.io/')">Powered by &nbsp;<img src="https://supabase.io/new/brand-assets/supabase-logo-wordmark--dark.svg" width="80px"/></button>
+                        
+                 </div>
+             </div>
+        </div>
+
+
+    </body>
+</html>
